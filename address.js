@@ -1,10 +1,17 @@
 var bob = {
     firstName: "Bob",
     lastName: "Jones",
-    phoneNumber: "(650) 777-777",
+    phoneNumber: "(650) 777-7777",
     email: "bob.jones@example.com"
 };
 
-console.log(bob.firstName);
-console.log(bob.lastName);
-console.log(bob.email);
+var mary = {
+    firstName: "Mary",
+    lastName: "Johnson",
+    phoneNumber: "(650) 888-8888",
+    email: "mary.johnson@example.com"
+    };
+
+contacts = [bob, mary];
+
+console.log(mary.phoneNumber);
