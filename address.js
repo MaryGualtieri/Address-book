@@ -42,3 +42,15 @@ var printPerson = function(person) {
     }
 
     search("Jones");
+
+    var add = function(firstName, lastName, email, phoneNumber) { //create function as asked
+    contacts[contacts.length] = { //create a new object, use its future index as a name (last position of the array)
+    firstName: firstName, // assign parameters to properties
+    lastName: lastName,
+    email: email,
+    phoneNumber: phoneNumber
+    }
+    };
+
+    add("John", "Smith", "johnsmith@zmail.com", "555-555-5555"); //call add function, pass new contact info
+    list(contacts); //check, as they request, to see if your new friend made the list!
