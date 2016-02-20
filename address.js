@@ -10,8 +10,13 @@ var mary = {
     lastName: "Johnson",
     phoneNumber: "(650) 888-8888",
     email: "mary.johnson@example.com"
+};
+
+var contacts = [bob, mary];
+
+var printPerson = function(person) {
+    console.log(person.firstName + " " + person.lastName);
     };
 
-contacts = [bob, mary];
-
-console.log(mary.phoneNumber);
+printPerson(contacts[0]);
+printPerson(contacts[1]);
