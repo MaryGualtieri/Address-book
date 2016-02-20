@@ -18,5 +18,9 @@ var printPerson = function(person) {
     console.log(person.firstName + " " + person.lastName);
     };
 
-printPerson(contacts[0]);
-printPerson(contacts[1]);
+    function list() {
+    	var contactsLength = contacts.length;
+    	for (var i = 0; i < contactsLength; i++) {
+    		printPerson(contacts[i]);
+    	}
+    }
